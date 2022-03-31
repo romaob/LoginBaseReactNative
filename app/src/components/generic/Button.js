@@ -14,27 +14,35 @@ export default function Button({style, children, text, backgroundColor, color, f
         borderRadius: 5,
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'row',
         backgroundColor: backgroundColor ? backgroundColor : colors.primary,                
         borderColor: backgroundColor ? backgroundColor : colors.primary,
-        borderWidth: outlined ? 2 : 0,
+        borderWidth: outlined ? 3 : 0,        
+        ...(!outlined && !flat ? {
+              shadowColor: '#000', 
+              elevation: 4,
+        } : {}),
         ...(outlined || flat ? {backgroundColor: 'transparent'} : {}),
         ...(disabled ? {opacity: 0.5} : {}),        
         ...(round ? {borderRadius: round, width: round, height: round} : {}),
       }}
+      onPress={onPress}
     >
-        {text &&
-          <Label 
-            style={{            
-              ...(flat ? {color: colors.primary,} : {}),
-              ...(outlined ? {color: colors.primary,} : {}),
-            }}
-            color={color ? backgroundColor : colors.buttonText}
-            text={text} 
-            size={values.text_size.button} />
-        }
-        {children && 
-          children
-        }
+
+      {children && 
+        children
+      }
+      {text &&
+        <Label 
+          style={{            
+            ...(flat ? {color: backgroundColor ? backgroundColor : colors.primary} : {}),
+            ...(outlined ? {color: backgroundColor ? backgroundColor : colors.primary} : {}),
+          }}
+          color={color ? backgroundColor : colors.buttonText}
+          text={text.toUpperCase()} 
+          bold='500'
+          size={values.text_size.button} />
+      }
     </TouchableOpacity>
   );
 }

@@ -2,10 +2,11 @@ const values = {
     margin: {
         default: 10,        
         listitem: 5,
+        item: 5,
     },
 
     padding: {
-        default: 10,
+        default: 5,
         screen: 10,
         listitem: 10,
         button: 15,
@@ -14,9 +15,9 @@ const values = {
     text_size: {
         default: 14,
         button: 18,
-        headder: 20,
-        title: 18,
-        subtitle: 16,  
+        headder: 38,
+        title: 28,
+        subtitle: 20,  
     }
 
 }

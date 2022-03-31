@@ -1,10 +1,15 @@
 const colors = {
-    primary: '#FF4585',
-    secondary: '#FF69B4',
-    accent: '#33DD55',
-    background: '#F2F2F2',
+    primary: '#31c44c',
+    secondary: '#3daa22',
+    accent: '#6d44ff',
+    background: '#EFEFEF',
     card: '#FFFFFF',
-    text: '#2C2C2E',
+
+    text: '#49494c',
+    text2: '#464660',
+    text_contrast: '#FFF',
+    text_contrast2: '#CCC',
+    
     border: '#C7C7CC',
     notification: '#FF5B58',
     success: '#00C851',
