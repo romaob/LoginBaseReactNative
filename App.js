@@ -4,6 +4,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Access from './app/src/screens/Access';
+import AccessResetPassword from './app/src/screens/AccessResetPassword';
 import AccessSignIn from './app/src/screens/AccessSignIn';
 import AccessSignUp from './app/src/screens/AccessSignUp';
 
@@ -33,6 +34,7 @@ const App = () => {
         <Stack.Screen name="Access" component={Access} options={{headerShown: false}}/>
         <Stack.Screen name="Signin" component={AccessSignIn} options={{headerShown: false}}/>
         <Stack.Screen name="Signup" component={AccessSignUp} options={{headerShown: false}}/>
+        <Stack.Screen name="ResetPassword" component={AccessResetPassword} options={{headerShown: false}}/>
         <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
       </NavigationContainer>

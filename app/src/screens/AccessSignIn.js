@@ -40,6 +40,10 @@ export default function AccessSignIn({navigation}) {
     navigation.navigate('Signup')
   }
 
+  const goToResetPassword = () => {
+    navigation.navigate('ResetPassword')
+  }
+
   return (
     <SafeAreaView style={{
       flex: 1,
@@ -54,7 +58,7 @@ export default function AccessSignIn({navigation}) {
         <MyTextInput label="E-mail:" value={email} onChangeText={setEmail} error={emailError}/>        
         <MyTextInput label="Password:" value={password} password onChangeText={setPassword} error={passwordError}/>
         <Button text="Log In" onPress={handleSignIn}/>
-        <Button text="Forgot your password?" flat textSize={values.text_size.default} backgroundColor={colors.info}/>      
+        <Button text="Forgot your password?" flat textSize={values.text_size.default} backgroundColor={colors.info} onPress={goToResetPassword}/>  
         <Spacer visible />
         <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
           <Label text="Don't have an account?" size={values.text_size.default}/>
