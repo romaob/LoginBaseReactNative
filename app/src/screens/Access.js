@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, ImageBackground, Image, Alert } from 'react-native';
+import { View, Text, ImageBackground, Image, Alert, StatusBar, Linking } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import colors from '../../values/colors';
 import strings from '../../values/strings';
 import values from '../../values/values';
@@ -7,28 +8,30 @@ import Button from '../components/generic/Button';
 import Icon from '../components/generic/Icon';
 import Label from '../components/generic/Label';
 
-export default function Access() {
+export default function Access({navigation}) {
 
   const singUpAction = () => {
-      Alert.alert('Sing Up');
+      navigation.navigate('Signup')
   }
 
   const singInAction = () => {
-      Alert.alert('Sing In');
+    navigation.navigate('Signin')
   }
 
-  const goToGitHubAction = () => {
-      Alert.alert('Go to GitHub');
+  const goToGitHubAction = async () => {
+      await Linking.canOpenURL(strings.app_repo_github)
+      Linking.openURL(strings.app_repo_github)
   }
 
   return (
-    <View style={{flex: 1, display :'flex',}}>      
+    <SafeAreaView style={{flex: 1, display :'flex',}}>      
+        <StatusBar barStyle="light-content" backgroundColor={colors.background_contrast} />
         <ImageBackground
             style={{
                 position: 'absolute',
                 width: '100%',
                 height: '100%',                    
-                backgroundColor: colors.accent,
+                backgroundColor: colors.background_contrast,
             }}
             //source={require('../../assets/images/access_bg.jpg')}
             source={{uri: 'http://www.dreamtemplate.com/dreamcodes/bg_images/color/c13.jpg'}}            
@@ -43,7 +46,7 @@ export default function Access() {
         }}>            
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
                 <Label text={strings.app_name} 
-                    size={values.text_size.headder} 
+                    size={values.text_size.header} 
                     color={colors.text_contrast}
                     bold
                 />
@@ -89,6 +92,6 @@ export default function Access() {
             <Label text="BOTTOM TEXT INFO" size={values.text_size.default} color={colors.text_contrast2} bold/>
         </View>   
 
-    </View>
+    </SafeAreaView>
   );
 }

@@ -4,11 +4,10 @@ import colors from '../../../values/colors';
 import values from '../../../values/values';
 import Label from './Label';
 
-export default function Button({style, children, text, backgroundColor, color, flat, outlined, round, disabled, onPress}) {
+export default function Button({style, children, text, textSize, backgroundColor, color, flat, outlined, round, disabled, onPress}) {
   return (
     <TouchableOpacity
       style={{
-        ...style,
         padding: values.padding.button,
         margin: 5,
         borderRadius: 5,
@@ -24,7 +23,8 @@ export default function Button({style, children, text, backgroundColor, color, f
         } : {}),
         ...(outlined || flat ? {backgroundColor: 'transparent'} : {}),
         ...(disabled ? {opacity: 0.5} : {}),        
-        ...(round ? {borderRadius: round, width: round, height: round} : {}),
+        ...(round ? {borderRadius: round, width: round, height: round, padding: values.padding.default,} : {}),
+        ...style,
       }}
       onPress={onPress}
     >
@@ -41,7 +41,7 @@ export default function Button({style, children, text, backgroundColor, color, f
           color={color ? backgroundColor : colors.buttonText}
           text={text.toUpperCase()} 
           bold='500'
-          size={values.text_size.button} />
+          size={textSize ? textSize : values.text_size.button} />
       }
     </TouchableOpacity>
   );

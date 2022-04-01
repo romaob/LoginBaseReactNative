@@ -6,6 +6,7 @@ const strings = {
     app_welcome_description: 'Join this experience of a login app',
     app_version: '1.0.0',
     app_company: 'Company',
+    app_repo_github: 'https://github.com/romaob/LoginBaseReactNative',
 
 }
 

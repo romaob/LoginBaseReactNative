@@ -2,7 +2,10 @@ import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { View, Text } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Access from './app/src/screens/Access';
+import AccessSignIn from './app/src/screens/AccessSignIn';
+import AccessSignUp from './app/src/screens/AccessSignUp';
 
 import Home from './app/src/screens/Home';
 
@@ -24,12 +27,16 @@ const MyTheme = {
 const App = () => { 
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-      <Stack.Screen name="Access" component={Access} />
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Stack.Navigator>
+        <Stack.Screen name="Access" component={Access} options={{headerShown: false}}/>
+        <Stack.Screen name="Signin" component={AccessSignIn} options={{headerShown: false}}/>
+        <Stack.Screen name="Signup" component={AccessSignUp} options={{headerShown: false}}/>
         <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
-    </NavigationContainer>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
 

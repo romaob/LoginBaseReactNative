@@ -1,8 +1,10 @@
 const colors = {
     primary: '#31c44c',
+    primary_light: '#abe8b0',
     secondary: '#3daa22',
     accent: '#6d44ff',
     background: '#EFEFEF',
+    background_contrast: '#22626b',
     card: '#FFFFFF',
 
     text: '#49494c',
@@ -17,7 +19,7 @@ const colors = {
     warning: '#FFEB3B',
     info: '#03A9F4',    
 
-    buttonDisabled: '#E0E0E0',
+    disabled: '#B0B0B0',
     buttonText: '#FFF',
     buttonTextDisabled: '#BDBDBD',
 }
