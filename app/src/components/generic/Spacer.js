@@ -7,9 +7,10 @@ export default function Spacer({style, visible}) {
   return (
     <View style={{
         width: "100%",
-        height: visible ? 2 : 0,
+        height: 2,
         margin: values.margin.item,
-        backgroundColor: colors.disabled,
+        backgroundColor: visible ? colors.disabled : 'transparent',
+        ...style,
     }}>
      </View>
   );

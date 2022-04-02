@@ -29,6 +29,10 @@ export default function AccessResetPassword({navigation}) {
         }
     }
 
+    const goToSignIn = () => {
+        navigation.navigate('Signin')
+    }
+
   return (
     <SafeAreaView style={{
         flex: 1,
@@ -43,7 +47,7 @@ export default function AccessResetPassword({navigation}) {
           <Button text="Send E-mail" onPress={handleResetPassword} backgroundColor={colors.error}/>          
           <Spacer/>
           <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-            <Button text="Sign In" flat textSize={values.text_size.button} /> 
+            <Button text="Sign In" flat textSize={values.text_size.button} onPress={goToSignIn}/>
           </View>
         </Card>
        </SafeAreaView>

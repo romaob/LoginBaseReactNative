@@ -20,8 +20,12 @@ const values = {
         header: 38,
         title: 28,
         subtitle: 20,  
-    }
+    },
 
+    test: {
+        image_background: 'http://www.dreamtemplate.com/dreamcodes/bg_images/color/c13.jpg',
+        image_avatar: 'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200',
+    }
 }
 
 export default values;

@@ -1,0 +1,49 @@
+{
+    "users": [
+        {
+            "id": 0, "name": "Sun", "user": "@mightysun", 
+            "size": "695.508", "distance": "0",
+            "avatar": "https://2.bp.blogspot.com/-Cr-6rJ_dCdM/UFCytO5yTHI/AAAAAAAAJz8/V5wLbZc0AlY/s1600/Sun+Wallpapers+1.jpg"
+        },
+        {
+            "id": 1, "name": "Mercury", "user": "@fast_furious_mercury",
+            "size": "2.439", "distance": "36.000.000",
+            "avatar": "https://soulriseastrology.com/wp-content/uploads/2013/10/Mercury_planet.jpg"
+        },
+        {
+            "id": 2, "name": "Venus", "user": "@HotVenus", 
+            "size": "6.051", "distance": "108.200.000",
+            "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsingularityhub.com%2Fwp-content%2Fuploads%2F2018%2F10%2Fvenus-star-field-background_shutterstock_645382660-1068x601.jpg&f=1&nofb=1"
+        },
+        {
+            "id": 3, "name": "Earth", "user": "@earth4life",
+            "size": "6.371", "distance": "149.510.000",
+            "avatar": "https://cdn.mos.cms.futurecdn.net/3upZx2gxxLpW7MBbnKYQLH-1200-80.jpg"
+        },
+        {
+            "id": 4, "name": "Mars", "user": "@godofwar", 
+            "size": "3.389", "distance": "147.098.074",
+            "avatar": "https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"
+        },
+        {
+            "id": 5, "name": "Jupiter", "user": "@KingJ",
+            "size": "69.911", "distance": "744.620.000",
+            "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F84%2FHubble_Visible_View_of_Jupiter.jpg%2F644px-Hubble_Visible_View_of_Jupiter.jpg&f=1&nofb=1"
+        },
+        {
+            "id": 6, "name": "Saturn", "user": "@LOTR", 
+            "size": "58.232", "distance": "1.434.000.000",
+            "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.refinery29.com%2Fimages%2F10314109.jpg%3Fcrop%3D40%3A21&f=1&nofb=1"
+        },
+        {
+            "id": 7, "name": "Uranus", "user": "@stopjokeme", 
+            "size": "25.362", "distance": "2.871.000.000",
+            "avatar": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg09.deviantart.net%2Fff8a%2Fi%2F2012%2F219%2F9%2F3%2Furanus_by_danielmathews-d5a4w7b.png&f=1&nofb=1"
+        },
+        {
+            "id": 8, "name": "Neptune", "user": "@cool_nep_tune", 
+            "size": "24.622", "distance": "4.495.000.000",
+            "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F169387.jpg&f=1&nofb=1"
+        }
+    ]
+}

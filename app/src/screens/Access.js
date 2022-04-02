@@ -24,8 +24,7 @@ export default function Access({navigation}) {
   }
 
   return (
-    <SafeAreaView style={{flex: 1, display :'flex',}}>      
-        <StatusBar barStyle="light-content" backgroundColor={colors.background_contrast} />
+    <SafeAreaView style={{flex: 1, display :'flex',}}>              
         <ImageBackground
             style={{
                 position: 'absolute',
@@ -34,7 +33,7 @@ export default function Access({navigation}) {
                 backgroundColor: colors.background_contrast,
             }}
             //source={require('../../assets/images/access_bg.jpg')}
-            source={{uri: 'http://www.dreamtemplate.com/dreamcodes/bg_images/color/c13.jpg'}}            
+            source={{uri: values.test.image_background}}            
         >
         </ImageBackground>
 
